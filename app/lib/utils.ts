@@ -16,4 +16,4 @@ export function formatSize(bytes: number, decimals: number = 2): string {
   );
 }
 
-export const generateUUID = () => crypto.randomUUID
+export const generateUUID = () => crypto.randomUUID()
