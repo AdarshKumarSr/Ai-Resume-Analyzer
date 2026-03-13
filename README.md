@@ -1,87 +1,162 @@
-# Welcome to React Router!
+# AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+An AI-powered resume analysis platform that evaluates resumes and generates structured feedback including ATS score, tone and style analysis, content quality evaluation, resume structure insights, and skill relevance.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+The application is built using **React Router + Vite + TypeScript** on the frontend, while **Puter.js** is used for authentication, cloud storage, and AI processing. Users can upload their resume and instantly receive AI-generated feedback with actionable improvement suggestions.
 
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+Live Demo  
+https://ai-resume-analyzer-x3fn.onrender.com/
 
 ---
 
-Built with ❤️ using React Router.
+# Features
+
+### AI Resume Analysis
+Upload a resume and receive detailed AI-generated feedback.
+
+### ATS Score Estimation
+Evaluates how well the resume performs against common Applicant Tracking System standards.
+
+### Tone and Style Analysis
+Analyzes the professionalism, clarity, and readability of the resume.
+
+### Content Quality Review
+Identifies weak descriptions and suggests improvements.
+
+### Resume Structure Evaluation
+Checks formatting, section ordering, and overall readability.
+
+### Skill Relevance Detection
+Highlights detected skills and evaluates their relevance.
+
+### Secure Authentication
+Authentication is handled using **Puter.js**.
+
+### Cloud Storage
+Resume files are securely stored using Puter cloud storage.
+
+### Instant Feedback
+Results are generated immediately after uploading a resume.
+
+---
+
+# Tech Stack
+
+### Frontend
+React  
+React Router  
+Vite  
+TypeScript  
+Tailwind CSS
+
+### AI & Backend Services
+Puter.js  
+AI Processing  
+Authentication  
+Cloud Storage
+
+### Deployment
+Render
+
+---
+
+# Project Structure
+
+```
+AI-Resume-Analyzer
+│
+├── app
+│   ├── components        # Reusable UI components
+│   ├── constants         # Static configuration and constants
+│   ├── lib               # Utility functions and Puter integrations
+│   ├── routes            # Application route pages
+│   ├── app.css           # Global styles
+│   ├── root.tsx          # Root layout component
+│   └── routes.ts         # Route configuration
+│
+├── public                # Static assets
+│
+├── types                 # Global TypeScript types
+│
+├── react-router.config.ts
+├── vite.config.ts
+├── tsconfig.json
+├── Dockerfile
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
+```
+
+---
+
+# How It Works
+
+1. User authenticates using Puter authentication.
+2. User uploads a resume file.
+3. The resume is processed using Puter cloud services.
+4. AI analyzes the resume and generates structured insights.
+5. The platform displays feedback including:
+   - ATS score
+   - Content quality analysis
+   - Tone and style feedback
+   - Skills detected
+   - Improvement suggestions
+
+---
+
+# Installation
+
+Clone the repository
+
+```
+git clone https://github.com/AdarshKumarSr/Ai-Resume-Analyzer.git
+```
+
+Navigate into the project
+
+```
+cd Ai-Resume-Analyzer
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run the development server
+
+```
+npm run dev
+```
+
+---
+
+# Environment Setup
+
+The project relies on **Puter.js** services for authentication, storage, and AI processing.
+
+Ensure that Puter services are properly configured before running the project.
+
+---
+
+# Future Improvements
+
+- Job description matching
+- Resume optimization suggestions
+- Advanced ATS scoring algorithm
+- Multiple resume comparison
+- Export analyzed resume reports
+
+---
+
+# Author
+
+Adarsh Kumar
+
+GitHub  
+https://github.com/AdarshKumarSr
+
+Portfolio
+https://adarsh3e8.in/
